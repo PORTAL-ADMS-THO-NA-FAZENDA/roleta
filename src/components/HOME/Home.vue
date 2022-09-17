@@ -23,13 +23,13 @@ export default {
       spin: 5,
       options:[
 					{
-						textFillStyle: '#000000',
+						textFillStyle: '#ffffff',
 						fillStyle: '#3d532f ',
 						text:'Teste 1',
             desc: "https://chat.whatsapp.com/CnPQDMbCkB7EzSDEnTzcB5"
 					},
 					{
-						textFillStyle: '#000000',
+						textFillStyle: '#ffffff',
 						fillStyle: '#17325d',
 						text:'Teste 2',
             desc: "https://chat.whatsapp.com/ChgHuJ1cb5aAlsAutfNnGy"
@@ -41,7 +41,7 @@ export default {
             desc: "https://chat.whatsapp.com/C4JyGbUEkxy9WElwifcYb9"
 					},
           {
-						textFillStyle: '#000000',
+						textFillStyle: '#ffffff',
 						fillStyle: '#bea181',
 						text:'Teste 4',
             desc: "https://chat.whatsapp.com/C4JyGbUEkxy9WElwifcYb9"
@@ -60,11 +60,17 @@ export default {
     width: 600px;
 }
 .modal-container {
-        width: 90%;
+        /* width: 90%; */
+    width: 33%;
+    height: 202px;
+}
+.modal-footer .modal-default-button {
+      margin: 66px 0 0 0;
 }
 @media screen and (max-width: 600px) {
      .modal-container {
-            padding: 20px 10px;
+        width: 85%;
+        padding: 20px 10px;
         font-size: 13px;
         
 }  
