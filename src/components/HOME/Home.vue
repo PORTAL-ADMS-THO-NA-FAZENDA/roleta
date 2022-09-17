@@ -1,71 +1,91 @@
 <template>
-<div class="container">
- <!-- <div class="notification custom">
-     <b-carousel>
-        <b-carousel-item v-for="(carousel, i) in carousels" :key="i">
-            <section :class="`hero  is-medium is-${carousel.color}`">
-                <img class="imgcustom" :src= carousel.imagem />
-                <div class="hero-body customhero has-text-centered">
-                    <h1 class="title">{{carousel.text}}</h1>
-                </div>
-            </section>
-        </b-carousel-item>
-    </b-carousel>
-  </div> -->
- <Portifolio/>
-</div>
+<div>
+    <vue-winwheel :segments="options" />
+    </div>  
 </template>
-<script>
-import Portifolio from '../HOME/Portifolio'
-import dna from '../../assets/dna.jpg'
-import robson from '../../assets/wa.jpg'
 
+<script>
+import VueWinwheel from '@robsonash/vue-winwheel-reversion/vue-winwheel'
 export default {
-   name: 'Home',
-   components: {
-  Portifolio
+  components:{
+    VueWinwheel
+    
   },
-  props: {
-    msg: String
+  data(){
+    return{
+      showModal: false,
+	    pageTitle: "Vue-Wheel",
+      wheelSize: 400,
+      btnColor: "",
+      btnText: "",
+      lineWidth: 3,
+      duration: 5,
+      spin: 5,
+      options:[
+					{
+						textFillStyle: '#000000',
+						fillStyle: '#3d532f ',
+						text:'Teste 1',
+            desc: "https://chat.whatsapp.com/CnPQDMbCkB7EzSDEnTzcB5"
+					},
+					{
+						textFillStyle: '#000000',
+						fillStyle: '#17325d',
+						text:'Teste 2',
+            desc: "https://chat.whatsapp.com/ChgHuJ1cb5aAlsAutfNnGy"
+					},
+					{
+						textFillStyle: '#000000',
+						fillStyle: '#ffffff ',
+						text:'Teste 3',
+            desc: "https://chat.whatsapp.com/C4JyGbUEkxy9WElwifcYb9"
+					},
+          {
+						textFillStyle: '#000000',
+						fillStyle: '#bea181',
+						text:'Teste 4',
+            desc: "https://chat.whatsapp.com/C4JyGbUEkxy9WElwifcYb9"
+					},
+
+				]
+    }
   },
-     data(){
-        return {
-               test: 0,
-               carousels: [
-                { imagem: dna, text: 'primary', color: 'primary' },
-                 { imagem: robson, text: 'info', color: 'info' }
-                // { imagem: dna, text: 'success', color: 'success' },
-                // { imagem: dna, text: 'warning', color: 'warning' },
-                // { imagem: dna, text: 'danger', color: 'danger' },
-            ]
-        }
-    }}
+  methods: {
+}
+}
 </script>
 
+<style>
+.vue-winwheel .wheel-wrapper .btn.btn-play {
+    width: 600px;
+}
+.modal-container {
+        width: 90%;
+}
+@media screen and (max-width: 600px) {
+     .modal-container {
+            padding: 20px 10px;
+        font-size: 13px;
+        
+}  
+.vue-winwheel .wheel-wrapper .btn.btn-play {
+    width: 300px;
+} 
+}
+@media screen and (max-width: 500px) {
+     .modal-container {
+        
+        font-size: 10px;
+} 
 
-<style scoped>
-h3 {
-  margin: 40px 0 0;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
-.custom{
-    padding: 1rem 1rem 1rem 1rem ;
-}
-.customhero{
-    padding: 3rem 1.5rem!important;
-
-}
-.imgcustom{
-    max-height:400px;
+.modal-default-button{
+    font-weight: bold;
+    border: 1px solid #3f51b5;
+    color: white;
+    width: 149px;
+    height: 35px;
+    border-radius: 10px;
+    background: #e91e63;
 }
 </style>
