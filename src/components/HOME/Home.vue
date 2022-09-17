@@ -14,7 +14,7 @@ export default {
   data(){
     return{
       showModal: false,
-	    pageTitle: "Vue-Wheel",
+      pageTitle: "Vue-Wheel",
       wheelSize: 400,
       btnColor: "",
       btnText: "",
