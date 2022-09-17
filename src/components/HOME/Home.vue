@@ -80,6 +80,7 @@ export default {
 
 }
 .modal-default-button{
+    font-size: 16px;
     font-weight: bold;
     border: 1px solid #3f51b5;
     color: white;
@@ -90,6 +91,44 @@ export default {
 }
 .vue-winwheel .wheel-wrapper .btn.btn-play {
   display: inline-table;
+}
+.modal-default-button {
+  cursor: pointer;
+}
+.modal-header {
+  font-size: 30px;
+}
+.modal-body button{
+  box-sizing: border-box;
+  cursor: pointer;
+  padding: 30px;
+  border-radius: 10px;
+   border: 5px solid #ff8800;
+  background: #ff8800; 
+  transition: all ease 0.3s;
+}
+.modal-body button:hover,
+.modal-body button:focus {
+    box-shadow: 0 0 0 3px #fcd3a1, 0 0 0 4px #ff8800;
+}
+.modal-body button:active {
+    box-shadow: 0 0 0 3px #ff8800, 0 0 0 4px #ff8800;
+}
+/* button {
+    box-sizing: border-box;
+    cursor: pointer;
+    padding: 10px 20px;
+    background: #118fff;
+    border-radius: 5px;
+    color: #001988;
+    border: 5px solid #118fff;
+    transition: all ease 0.3s;
+} */
+
+.modal-body button a{
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
 }
 @media only screen and (max-width: 418px) {
  .vue-winwheel .wheel-wrapper::before {
