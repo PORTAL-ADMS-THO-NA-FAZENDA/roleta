@@ -1,11 +1,11 @@
 <template>
 <div>
-<span>pagina nao encontrada</span>
+<span>Página nao encontrada</span>
 </div>
 </template>
 <script>
 export default {
-      name: 'NotFound',
+      name: 'Não encontrado',
     data(){
         return{
        
