@@ -88,4 +88,15 @@ export default {
     border-radius: 10px;
     background: #e91e63;
 }
+.vue-winwheel .wheel-wrapper .btn.btn-play {
+  display: inline-table;
+}
+@media only screen and (max-width: 418px) {
+ .vue-winwheel .wheel-wrapper::before {
+  left: 172px!important;
+ }
+  .vue-winwheel .canvas-wrapper:after {
+  left: 178px!important;
+ }
+}
 </style>

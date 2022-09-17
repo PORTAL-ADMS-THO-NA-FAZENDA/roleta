@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.1",
-    "@robsonash/vue-winwheel-reversion": "^1.2.3",
+    "@robsonash/vue-winwheel-reversion": "^1.2.5",
     "axios": "^0.20.0",
     "buefy": "^0.9.3",
     "bulma": "^0.9.1",
