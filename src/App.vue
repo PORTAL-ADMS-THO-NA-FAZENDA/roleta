@@ -1,8 +1,8 @@
 <template>
 <div  id="app">
 
-<h1>THO NA FAZENDA</h1>
-
+<!-- <h1>THO NA FAZENDA</h1> -->
+<h1><img style="max-width: 150px;" src='@/assets/logo.png'></h1>
 <router-view></router-view>
   
 </div>

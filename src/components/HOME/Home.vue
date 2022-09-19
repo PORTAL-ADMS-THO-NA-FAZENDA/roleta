@@ -25,26 +25,20 @@ export default {
 					{
 						textFillStyle: '#ffffff',
 						fillStyle: '#3d532f ',
-						text:'Teste 1',
-            desc: "https://chat.whatsapp.com/CnPQDMbCkB7EzSDEnTzcB5"
+						text:'Leoninos',
+            desc: " https://chat.whatsapp.com/KQ1fgi8yAZm7DPW74w2DWR"
 					},
 					{
 						textFillStyle: '#ffffff',
 						fillStyle: '#17325d',
-						text:'Teste 2',
-            desc: "https://chat.whatsapp.com/ChgHuJ1cb5aAlsAutfNnGy"
-					},
-					{
-						textFillStyle: '#000000',
-						fillStyle: '#ffffff ',
-						text:'Teste 3',
-            desc: "https://chat.whatsapp.com/C4JyGbUEkxy9WElwifcYb9"
+						text:'Ex do Thomaz',
+            desc: "https://chat.whatsapp.com/KoenuM2uGrBDKLUJ6iAJCI"
 					},
           {
 						textFillStyle: '#ffffff',
 						fillStyle: '#bea181',
-						text:'Teste 4',
-            desc: "https://chat.whatsapp.com/C4JyGbUEkxy9WElwifcYb9"
+						text:'Daniel fazendeiro',
+            desc: "https://chat.whatsapp.com/GAe8RFIvGR58hdmbKVDpo0"
 					},
 
 				]
@@ -58,6 +52,7 @@ export default {
 <style>
 .vue-winwheel .wheel-wrapper .btn.btn-play {
     width: 600px;
+    letter-spacing: unset!important;
 }
 .modal-container {
         /* width: 90%; */
@@ -67,15 +62,25 @@ export default {
 .modal-footer .modal-default-button {
       margin: 66px 0 0 0;
 }
+@media screen and (max-width: 730px) {
+  .vue-winwheel .wheel-wrapper .btn.btn-play {
+    padding: 0px 0px!important;
+  }
+    .vue-winwheel .wheel-wrapper .button-wrapper {
+  
+}
+}
 @media screen and (max-width: 600px) {
-     .modal-container {
+    .modal-container {
         width: 85%;
         padding: 20px 10px;
         font-size: 13px;
         
 }  
+
 .vue-winwheel .wheel-wrapper .btn.btn-play {
     width: 300px;
+        padding: 0px 21px!important;
 } 
 }
 @media screen and (max-width: 500px) {
@@ -103,13 +108,15 @@ export default {
 }
 .modal-header {
   font-size: 30px;
+  font-weight: bold;
+  color: #364c2e!important;
 }
 .modal-body button{
   box-sizing: border-box;
   cursor: pointer;
   padding: 30px;
   border-radius: 10px;
-   border: 5px solid #ff8800;
+  border: 5px solid #ff8800;
   background: #ff8800; 
   transition: all ease 0.3s;
 }
@@ -144,4 +151,5 @@ export default {
   left: 178px!important;
  }
 }
+
 </style>
