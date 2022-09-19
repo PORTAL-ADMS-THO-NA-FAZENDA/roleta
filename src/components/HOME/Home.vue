@@ -158,17 +158,32 @@ export default {
   .vue-winwheel .canvas-wrapper:after {
               left: 176px!important;
  } 
-/*  #app h1 img {
-      margin-left: calc(25% + 57px);
- } */
 } 
-/* @media only screen and (max-width: 417px) {
- .vue-winwheel .wheel-wrapper::before {
-      left: calc(50% - 31px)!important;
- }
-  .vue-winwheel .canvas-wrapper:after {
-          left: calc(50% - 25px)!important;
- } 
-} */
 
+ @media only screen and (max-width: 417px) {
+ #app h1 img {
+          margin-left: 6px;
+ } 
+ .vue-winwheel .wheel-wrapper .button-wrapper {
+      margin-left: 82px!important;
+ }
+ }
+ @media only screen and (max-width: 416px) {
+ #app h1 img {
+      margin-left: 20px;
+ } 
+ }
+ @media only screen and (max-width: 391px) {
+ #app h1 img {
+      margin-left: 30px;
+ } 
+ }
+ @media only screen and (min-device-width: 359px) and (max-width: 376px) {
+ #app h1 img {
+      margin-left: 65px;
+ } 
+ .vue-winwheel .wheel-wrapper .button-wrapper {
+      margin-left: 82px;
+ }
+ }
 </style>
