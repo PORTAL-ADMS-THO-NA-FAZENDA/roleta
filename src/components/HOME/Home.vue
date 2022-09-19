@@ -151,5 +151,12 @@ export default {
   left: 178px!important;
  }
 }
-
+@media only screen and (max-width: 417px) {
+ .vue-winwheel .wheel-wrapper::before {
+      left: calc(50% - 31px)!important;
+ }
+  .vue-winwheel .canvas-wrapper:after {
+          left: calc(50% - 25px)!important;
+ } 
+}
 </style>
