@@ -151,12 +151,24 @@ export default {
   left: 178px!important;
  }
 }
-@media only screen and (max-width: 417px) {
+ @media only screen and (max-width: 417px) {
+ .vue-winwheel .wheel-wrapper::before {
+      left: 169px!important;
+ }
+  .vue-winwheel .canvas-wrapper:after {
+              left: 176px!important;
+ } 
+/*  #app h1 img {
+      margin-left: calc(25% + 57px);
+ } */
+} 
+/* @media only screen and (max-width: 417px) {
  .vue-winwheel .wheel-wrapper::before {
       left: calc(50% - 31px)!important;
  }
   .vue-winwheel .canvas-wrapper:after {
           left: calc(50% - 25px)!important;
  } 
-}
+} */
+
 </style>
